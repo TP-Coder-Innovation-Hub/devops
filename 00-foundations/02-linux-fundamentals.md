@@ -26,14 +26,12 @@ which nginx                  # locate a binary
 
 Every file has three permission sets: owner, group, others.
 
-```
--rwxr-xr-- 1 user group 4096 Jun  8 10:00 deploy.sh
-│├──┤├──┤├──┤
-│ │   │   └── others: read
-│ │   └────── group: read + execute
-│ └────────── owner: read + write + execute
-└──────────── file (-) not directory (d)
-```
+| Position | Characters | Meaning |
+|----------|-----------|---------|
+| `-rwxr-xr--` | `rwx` | owner: read + write + execute |
+| | `r-x` | group: read + execute |
+| | `r--` | others: read |
+| First char | `-` | file (not directory `d`) |
 
 ```bash
 chmod 755 deploy.sh          # rwxr-xr-x
