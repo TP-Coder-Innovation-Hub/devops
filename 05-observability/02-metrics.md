@@ -6,7 +6,14 @@ Logs tell you what happened. Metrics tell you how the system is performing right
 
 ## Prometheus Mental Model
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — Prometheus pull-based metrics scrape targets storage Grafana dashboard
+```mermaid
+graph TD
+    PROM["Prometheus Server"] -->|"scrape /metrics"| T1["App 1"]
+    PROM -->|"scrape /metrics"| T2["App 2"]
+    PROM -->|"scrape /metrics"| T3["Node Exporter"]
+    PROM -->|"store"| TSDB["Time-Series DB"]
+    TSDB --> GRAF["Grafana\nDashboards"]
+```
 
 ```mermaid
 graph LR
@@ -100,7 +107,15 @@ topk(5, sum by (path) (rate(http_requests_total[5m])))
 
 ## The RED Method
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — RED method rate errors duration service dashboard
+```mermaid
+graph TD
+    RED["RED Method"] --> R["Rate\nrequests/sec"]
+    RED --> E["Errors\n% of failures"]
+    RED --> D["Duration\nlatency p50/p99"]
+    R --> DASH["Dashboard\nService Health"]
+    E --> DASH
+    D --> DASH
+```
 
 For every user-facing service, track these three:
 

@@ -2,7 +2,14 @@
 
 ## The Problem
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — centralized logging pipeline Fluentd Elasticsearch Kibana Loki Grafana
+```mermaid
+flowchart LR
+    APP1["App 1\nstdout"] --> SHIP["Log Shipper\n(Fluentd/Filebeat)"]
+    APP2["App 2\nstdout"] --> SHIP
+    APP3["App 3\nstdout"] --> SHIP
+    SHIP --> STORE["Log Store\n(Elasticsearch/Loki)"]
+    STORE --> QUERY["Query UI\n(Kibana/Grafana)"]
+```
 
 Your application runs on 20 servers. Something breaks. You SSH into each server and `grep` logs? That does not scale. You need centralized logging.
 

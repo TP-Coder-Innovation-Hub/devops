@@ -131,7 +131,17 @@ spec:
 
 ## How It Fits Together
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — Kubernetes traffic flow Ingress Service Pod Deployment
+```mermaid
+flowchart LR
+    USER[User] --> ING[Ingress]
+    ING --> SVC[Service]
+    SVC --> P1[Pod 1]
+    SVC --> P2[Pod 2]
+    SVC --> P3[Pod 3]
+    DEPLOY[Deployment] -->|"manages"| P1
+    DEPLOY -->|"manages"| P2
+    DEPLOY -->|"manages"| P3
+```
 
 ```mermaid
 graph LR
@@ -149,7 +159,13 @@ Traffic flow: Internet -> Ingress (host/path routing) -> Service (load balancing
 
 ## Reconciler Loop
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — Kubernetes reconciler loop desired state actual state controller
+```mermaid
+flowchart LR
+    DESIRED["Desired State\n(yaml: 3 replicas)"] --> CTRL[Controller]
+    CTRL -->|"observe"| ACTUAL["Actual State\n(running: 2 pods)"]
+    ACTUAL -->|"diff"| CTRL
+    CTRL -->|"reconcile: create 1 pod"| ACTUAL
+```
 
 Kubernetes is a control plane of reconciler loops:
 

@@ -120,7 +120,18 @@ sudo ss -tlnp
 
 ## Debugging Network Issues
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — network debugging flowchart DNS resolve port open route HTTP TLS
+```mermaid
+flowchart TD
+    Start[Connection Failed] --> DNS{DNS resolves?}
+    DNS -->|No| FIX1["Check DNS records"]
+    DNS -->|Yes| PORT{Port reachable?}
+    PORT -->|No| FIX2["Check firewall / SG"]
+    PORT -->|Yes| HTTP{HTTP responds?}
+    HTTP -->|No| FIX3["Check service running"]
+    HTTP -->|Yes| TLS{TLS handshake OK?}
+    TLS -->|No| FIX4["Check certificate"]
+    TLS -->|Yes| OK["✓ Connection works"]
+```
 
 When something cannot connect, check in order:
 

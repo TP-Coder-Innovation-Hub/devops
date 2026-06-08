@@ -2,7 +2,13 @@
 
 ## Why Containers
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — Docker image blueprint container running instances
+```mermaid
+graph LR
+    IMG["Docker Image\n(blueprint)"] -->|"docker run"| C1["Container 1\n(running)"]
+    IMG -->|"docker run"| C2["Container 2\n(running)"]
+    IMG -->|"docker run"| C3["Container 3\n(running)"]
+    DOCKERFILE["Dockerfile"] -->|"docker build"| IMG
+```
 
 "It works on my machine" is a real problem. Containers solve it by packaging the application with its entire runtime: OS libraries, dependencies, configuration. A container runs identically on every host.
 
@@ -122,7 +128,19 @@ docker images myapp
 
 ## Multi-Stage Builds
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — Docker multi-stage build large builder stage small final image
+```mermaid
+flowchart LR
+    subgraph "Stage 1: Builder (~500MB)"
+        B1["Install build tools"]
+        B1 --> B2["Compile source"]
+        B2 --> B3["Binary artifact"]
+    end
+    subgraph "Stage 2: Final (~20MB)"
+        F1["Copy binary only"]
+        F1 --> F2["Minimal base image\n(alpine)"]
+    end
+    B3 -->|"COPY --from"| F1
+```
 
 Multi-stage builds produce small images by separating build dependencies from runtime:
 

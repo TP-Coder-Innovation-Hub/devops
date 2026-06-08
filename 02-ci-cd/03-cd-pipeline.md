@@ -14,7 +14,16 @@ graph LR
 
 ## Deployment Strategies
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — blue-green deployment vs canary deployment traffic switching
+```mermaid
+graph TD
+    subgraph "Blue-Green"
+        BG_BLUE["Blue (v1)\nCurrent"] -->|"switch all"| BG_GREEN["Green (v2)\nNew"]
+    end
+    subgraph "Canary"
+        CAN_OLD["v1 — 90% traffic"] --- CAN_NEW["v2 — 10% traffic"]
+        CAN_NEW -->|"gradually increase"| CAN_FULL["v2 — 100%"]
+    end
+```
 
 ### Rolling Update (Default)
 

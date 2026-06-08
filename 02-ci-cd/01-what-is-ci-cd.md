@@ -2,7 +2,19 @@
 
 ## Three Terms, Three Meanings
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — continuous integration continuous delivery continuous deployment progression
+```mermaid
+flowchart LR
+    subgraph "CI"
+        CI1["Merge → Build → Test"]
+    end
+    subgraph "CD (Delivery)"
+        CD1["CI + Deployable artifact\nManual deploy button"]
+    end
+    subgraph "CD (Deployment)"
+        CDE1["CI + Auto-deploy\nto production"]
+    end
+    CI1 --> CD1 --> CDE1
+```
 
 ```mermaid
 graph LR

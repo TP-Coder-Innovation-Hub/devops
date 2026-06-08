@@ -2,7 +2,17 @@
 
 ## Pipeline Stages
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — CI pipeline stages lint build test security artifact parallel
+```mermaid
+flowchart LR
+    SRC[Git Push] --> LINT["Lint"]
+    SRC --> BUILD["Build"]
+    BUILD --> UNIT["Unit Tests"]
+    BUILD --> SEC["Security Scan"]
+    BUILD --> INT["Integration Tests"]
+    UNIT --> ART["Artifact"]
+    SEC --> ART
+    INT --> ART
+```
 
 A CI pipeline runs on every push. It must be fast (under 10 minutes) and reliable (no flaky tests).
 

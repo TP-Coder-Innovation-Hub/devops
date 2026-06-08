@@ -4,7 +4,18 @@
 
 Development teams ship code fast. Operations teams keep systems stable. These goals conflict.
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — DevOps culture dev wall ops wall blame cycle collaboration
+```mermaid
+graph LR
+    subgraph "Before DevOps"
+        DEV["Dev\n'throws code over wall'"] -->|"blame"| OPS["Ops\n'works on my machine'"]
+        OPS -->|"blame"| DEV
+    end
+    subgraph "After DevOps"
+        TEAM["Shared Ownership\nDev + Ops together"] --> AUTO["Automate everything"]
+        AUTO --> FEED["Fast feedback loops"]
+        FEED --> TEAM
+    end
+```
 
 ```mermaid
 graph LR
@@ -48,7 +59,17 @@ These metrics reveal whether your process works, not whether your tools are tren
 
 ## The Feedback Loop
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — DevOps feedback loop plan code build test release deploy operate monitor
+```mermaid
+flowchart LR
+    PLAN[Plan] --> CODE[Code]
+    CODE --> BUILD[Build]
+    BUILD --> TEST[Test]
+    TEST --> RELEASE[Release]
+    RELEASE --> DEPLOY[Deploy]
+    DEPLOY --> OPERATE[Operate]
+    OPERATE --> MONITOR[Monitor]
+    MONITOR -->|"feedback"| PLAN
+```
 
 ```mermaid
 graph TD
