@@ -1,4 +1,4 @@
-# Linux Fundamentals `[Entry]`
+# Linux Fundamentals
 
 ## Why Linux
 

@@ -1,6 +1,8 @@
-# CI Pipeline `[Mid]`
+# CI Pipeline
 
 ## Pipeline Stages
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — CI pipeline stages lint build test security artifact parallel
 
 A CI pipeline runs on every push. It must be fast (under 10 minutes) and reliable (no flaky tests).
 

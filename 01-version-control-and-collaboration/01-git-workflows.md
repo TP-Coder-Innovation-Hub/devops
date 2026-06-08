@@ -1,4 +1,4 @@
-# Git Workflows `[Entry]`
+# Git Workflows
 
 ## Why Branch Strategy Matters
 

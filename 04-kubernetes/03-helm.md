@@ -1,4 +1,4 @@
-# Helm `[Mid]`
+# Helm
 
 ## What Helm Solves
 

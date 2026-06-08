@@ -1,4 +1,4 @@
-# Kubernetes in Practice `[Mid]`
+# Kubernetes in Practice
 
 ## ConfigMaps
 

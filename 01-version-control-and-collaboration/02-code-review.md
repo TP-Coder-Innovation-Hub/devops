@@ -1,4 +1,4 @@
-# Code Review `[Mid]`
+# Code Review
 
 ## Why Code Review
 

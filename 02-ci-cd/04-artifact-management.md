@@ -1,4 +1,4 @@
-# Artifact Management `[Mid]`
+# Artifact Management
 
 ## What Is an Artifact
 

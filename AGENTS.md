@@ -24,7 +24,7 @@ No build system. All files are Markdown documentation.
 - 200-500 words per file
 - YAML/Shell code examples
 - Mermaid diagrams where helpful
-- `[Entry]`/`[Mid]`/`[Senior]` difficulty badges
+-/`[Mid]`/`[Senior]` difficulty badges
 - No emojis, no filler
 
 ## Editing Guidelines

@@ -1,4 +1,4 @@
-# Alerting `[Senior]`
+# Alerting
 
 ## Alert on Symptoms, Not Causes
 

@@ -1,4 +1,4 @@
-# Kubernetes Concepts `[Entry]`
+# Kubernetes Concepts
 
 ## Why Kubernetes
 
@@ -131,6 +131,8 @@ spec:
 
 ## How It Fits Together
 
+> 🖼️ **[IMAGE_PLACEHOLDER]** — Kubernetes traffic flow Ingress Service Pod Deployment
+
 ```mermaid
 graph LR
     Internet --> Ingress
@@ -146,6 +148,8 @@ graph LR
 Traffic flow: Internet -> Ingress (host/path routing) -> Service (load balancing) -> Pods (running containers)
 
 ## Reconciler Loop
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — Kubernetes reconciler loop desired state actual state controller
 
 Kubernetes is a control plane of reconciler loops:
 

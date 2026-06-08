@@ -1,4 +1,4 @@
-# Incident Management `[Senior]`
+# Incident Management
 
 ## Incidents Will Happen
 

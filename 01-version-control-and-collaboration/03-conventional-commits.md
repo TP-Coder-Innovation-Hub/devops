@@ -1,4 +1,4 @@
-# Conventional Commits `[Entry]`
+# Conventional Commits
 
 ## Why Structured Messages
 

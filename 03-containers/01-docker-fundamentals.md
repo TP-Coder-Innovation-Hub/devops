@@ -1,6 +1,8 @@
-# Docker Fundamentals `[Entry]`
+# Docker Fundamentals
 
 ## Why Containers
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — Docker image blueprint container running instances
 
 "It works on my machine" is a real problem. Containers solve it by packaging the application with its entire runtime: OS libraries, dependencies, configuration. A container runs identically on every host.
 
@@ -119,6 +121,8 @@ docker images myapp
 ```
 
 ## Multi-Stage Builds
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — Docker multi-stage build large builder stage small final image
 
 Multi-stage builds produce small images by separating build dependencies from runtime:
 

@@ -1,4 +1,4 @@
-# CD Pipeline `[Mid]`
+# CD Pipeline
 
 ## From Artifact to Production
 
@@ -13,6 +13,8 @@ graph LR
 ```
 
 ## Deployment Strategies
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — blue-green deployment vs canary deployment traffic switching
 
 ### Rolling Update (Default)
 

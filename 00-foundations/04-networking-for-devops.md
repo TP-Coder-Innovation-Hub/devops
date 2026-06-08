@@ -1,4 +1,4 @@
-# Networking for DevOps `[Entry]`
+# Networking for DevOps
 
 ## Why Networking Matters
 
@@ -119,6 +119,8 @@ sudo ss -tlnp
 ```
 
 ## Debugging Network Issues
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — network debugging flowchart DNS resolve port open route HTTP TLS
 
 When something cannot connect, check in order:
 

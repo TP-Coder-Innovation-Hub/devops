@@ -1,8 +1,10 @@
-# What Is DevOps `[Entry]`
+# What Is DevOps
 
 ## The Problem DevOps Solves
 
 Development teams ship code fast. Operations teams keep systems stable. These goals conflict.
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — DevOps culture dev wall ops wall blame cycle collaboration
 
 ```mermaid
 graph LR
@@ -45,6 +47,8 @@ High-performing teams measure:
 These metrics reveal whether your process works, not whether your tools are trendy.
 
 ## The Feedback Loop
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — DevOps feedback loop plan code build test release deploy operate monitor
 
 ```mermaid
 graph TD

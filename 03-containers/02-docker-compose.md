@@ -1,4 +1,4 @@
-# Docker Compose `[Mid]`
+# Docker Compose
 
 ## Multi-Container Applications
 

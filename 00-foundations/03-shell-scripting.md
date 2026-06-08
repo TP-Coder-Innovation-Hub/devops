@@ -1,4 +1,4 @@
-# Shell Scripting `[Entry]`
+# Shell Scripting
 
 ## Why Shell Scripts
 

@@ -1,4 +1,4 @@
-# Container Security `[Senior]`
+# Container Security
 
 ## Threat Model
 

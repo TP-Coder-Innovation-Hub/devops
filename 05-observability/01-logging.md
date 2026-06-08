@@ -1,6 +1,8 @@
-# Logging `[Entry]`
+# Logging
 
 ## The Problem
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — centralized logging pipeline Fluentd Elasticsearch Kibana Loki Grafana
 
 Your application runs on 20 servers. Something breaks. You SSH into each server and `grep` logs? That does not scale. You need centralized logging.
 

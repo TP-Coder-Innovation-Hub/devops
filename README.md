@@ -26,9 +26,9 @@ Each module builds on the previous one. Work through them in order.
 
 ## Badges
 
-- `[Entry]` — foundational concepts, start here
-- `[Mid]` — practical application, hands-on
-- `[Senior]` — advanced patterns, ownership mindset
+- — foundational concepts, start here
+- — practical application, hands-on
+- — advanced patterns, ownership mindset
 
 ## How to Use
 

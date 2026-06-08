@@ -1,6 +1,8 @@
-# What Is CI/CD `[Entry]`
+# What Is CI/CD
 
 ## Three Terms, Three Meanings
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — continuous integration continuous delivery continuous deployment progression
 
 ```mermaid
 graph LR

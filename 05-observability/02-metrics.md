@@ -1,10 +1,12 @@
-# Metrics `[Mid]`
+# Metrics
 
 ## Why Metrics
 
 Logs tell you what happened. Metrics tell you how the system is performing right now and how it performed over time. Metrics enable dashboards, alerting, and capacity planning.
 
 ## Prometheus Mental Model
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — Prometheus pull-based metrics scrape targets storage Grafana dashboard
 
 ```mermaid
 graph LR
@@ -97,6 +99,8 @@ topk(5, sum by (path) (rate(http_requests_total[5m])))
 ```
 
 ## The RED Method
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — RED method rate errors duration service dashboard
 
 For every user-facing service, track these three:
 
